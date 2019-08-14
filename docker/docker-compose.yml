@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+   mysql:
+     image: mysql
+     command: --default-authentication-plugin=mysql_native_password
+     environment:
+       MYSQL_ROOT_PASSWORD: Adm123!
+       MYSQL_DATABASE: tre
+       MYSQL_USER: tre
+       MYSQL_PASSWORD: 4linux
+
+   app:
+     depends_on:
+     - mysql
+     image: hectorvido/php-app
+     ports:
+     - "8080:8080"
+     environment:
+       DB_HOST: mysql
+       DB_PORT: 3306
+       DB_USER: tre
+       DB_PASS: 4linux
+       DB_NAME: tre
