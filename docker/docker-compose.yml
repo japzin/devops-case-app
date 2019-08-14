@@ -13,7 +13,7 @@ services:
    app:
      depends_on:
      - mysql
-     image: hectorvido/php-app
+     image: japzin/php-app
      ports:
      - "8080:8080"
      environment:

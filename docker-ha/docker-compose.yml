@@ -17,7 +17,7 @@ services:
      depends_on:
      - mysql
      - memcached1
-     image: hectorvido/php-app
+     image: japzin/php-app
      deploy:
        replicas: 3
      ports:

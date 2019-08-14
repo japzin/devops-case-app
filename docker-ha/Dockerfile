@@ -3,7 +3,7 @@ EXPOSE 8080
 
 RUN apk add --no-cache php-cli php-mysqli php-session git && \
 mkdir /app && \
-git clone https://gitlab.com/hector_vido/app.git /app && \
+git clone https://github.com/japzin/devops-case-itau.git /app && \
 rm -rf /app/.git
 
 RUN apk add --no-cache php7-pecl-memcached
