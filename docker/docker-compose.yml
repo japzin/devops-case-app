@@ -5,7 +5,7 @@ services:
      image: mysql
      command: --default-authentication-plugin=mysql_native_password
      environment:
-       MYSQL_ROOT_PASSWORD: Adm123!
+       MYSQL_ROOT_PASSWORD: fsetai123
        MYSQL_DATABASE: itau
        MYSQL_USER: fsetai
        MYSQL_PASSWORD: fsetai123
