@@ -6,7 +6,7 @@ mkdir /app && \
 git clone https://github.com/japzin/devops-case-app.git /app
 
 RUN apk add --no-cache php7-pecl-memcached
-COPY php.ini /etc/php7/php.ini
+COPY /docker/php.ini /etc/php7/php.ini
 
 WORKDIR /app
 ENTRYPOINT ["php", "-S", "0.0.0.0:8080", "-t"]
